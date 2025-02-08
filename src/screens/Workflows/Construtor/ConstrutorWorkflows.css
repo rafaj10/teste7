@@ -1,0 +1,11 @@
+.react-flow__node {
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.react-flow__edge {
+  stroke: #000;
+}

@@ -1,0 +1,4 @@
+/* TENANT */
+export const GET_TENANTS = "GET_TENANTS"
+export const GET_TENANT_SUCCESS = "GET_TENAN_SUCCESS"
+export const GET_TENANT_FAIL = "GET_TENAN_FAIL"

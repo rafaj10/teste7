@@ -1,0 +1,33 @@
+.constructor {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background: #f4f4f4;
+  padding: 10px;
+}
+
+.workspace {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+.node {
+  position: absolute;
+  background: #ececec;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.properties-panel {
+  position: absolute;
+  right: 0;
+  width: 300px;
+  background: #f4f4f4;
+  padding: 10px;
+}

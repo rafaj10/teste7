@@ -1,0 +1,145 @@
+:root {
+  --step-active: #564ab1;
+}
+
+.toggler {
+  /* style={{ fontSize: 10, padding: '0 3px', background: '#473076', borderRadius: '50%', color: 'white' }} */
+  font-size: 8px;
+  background: #473076;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  width: 15px;
+  height: 15px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.title {
+  padding: 20px 20px 0;
+}
+
+.section-title {
+  font-weight: bold;
+  margin: 16px 0 8px;
+  display: block;
+}
+
+.proposal-item > div {
+  margin-bottom: 12px;
+}
+
+.proposal-item > div > span:first-child {
+  font-weight: 600;
+  color: #d78203;
+  font-size: 13px;
+}
+
+.proposal-item > div > span {
+  font-size: 13px;
+  display: block;
+  font-weight: bold;
+}
+
+.padding-content {
+  padding: 20px 0;
+}
+
+.lead-duedate {
+  margin: 21px 0 0;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  gap: 21px;
+  align-items: center;
+}
+
+.lead-duedate i {
+  color: red;
+  font-size: 16px;
+  margin-right: 6px;
+}
+
+.lead-step-container {
+  list-style: none;
+  overflow-y: hidden;
+  overflow-x: auto;
+  display: flex;
+}
+
+.lead-step-container .lead-step-item {
+  float: left;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.lead-step-container .lead-step-item span {
+  text-decoration: none;
+  padding: 10px 0 10px 50px;
+  background: hsla(0, 0%, 90%, 1);
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.lead-step-container .lead-step-item span:after {
+  content: ' ';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent; /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid hsla(0, 0%, 90%, 1);
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+
+.lead-step-container .lead-step-item.lead-step-item-active span {
+  color: white;
+  background: var(--step-active);
+}
+
+.lead-step-container .lead-step-item.lead-step-item-active span::after {
+  border-left-color: var(--step-active);
+}
+
+.lead-step-container .lead-step-item.lead-step-item-active span::before {
+  border-left-color: var(--step-active);
+}
+
+.lead-step-container .lead-step-item span:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
+}
+
+.lead-step-container .lead-step-item:first-child span {
+  padding-left: 20px;
+}
+
+.lead-step-container lead-step-item:last-child span:after {
+  border: 0;
+}
+
+.verti-timeline .event-list .event-timeline-dot {
+  z-index: 0 !important;
+}

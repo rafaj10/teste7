@@ -1,0 +1,170 @@
+import avatar1 from "../../assets/images/users/avatar-2.jpg"
+import avatar2 from "../../assets/images/users/avatar-2.jpg"
+import avatar3 from "../../assets/images/users/avatar-3.jpg"
+import avatar4 from "../../assets/images/users/avatar-4.jpg"
+import avatar5 from "../../assets/images/users/avatar-5.jpg"
+import avatar7 from "../../assets/images/users/avatar-7.jpg"
+
+const users = [
+  {
+    id: 1,
+    name: "BB",
+    designation: "Setor Financeiro",
+    color: "primary",
+    email: "david@bb.com",
+    projects: "125",
+    tags: ["Lead Quente", "Proposta", "Em andamento"],
+  },
+  {
+    id: 2,
+    img: avatar2,
+    name: "Honda",
+    designation: "Setor Automotivo",
+    email: "frank@honda.com",
+    projects: "132",
+    tags: ["Lead Quente", "Proposta", "Em andamento"],
+  },
+  {
+    id: 3,
+    img: avatar3,
+    name: "Ademicon",
+    designation: "Setor Financeiro",
+    email: "Rafael@ademicon.com",
+    projects: "1112",
+    tags: ["Não pode atender"],
+  },
+  {
+    id: 4,
+    name: "Itau",
+    designation: "Setor Financeiro",
+    color: "success",
+    email: "mark@itau.com",
+    projects: "121",
+    tags: ["Agendamento"],
+  },
+  {
+    id: 5,
+    img: avatar4,
+    name: "Embracon",
+    designation: "Setor Financeiro",
+    email: "minnie@embracon.com",
+    projects: "145",
+    tags: ["Proposta"],
+  },
+  {
+    id: 6,
+    img: avatar5,
+    name: "Pepsico",
+    designation: "Setor alimentício",
+    email: "shirley@pepsico.com",
+    projects: "136",
+    tags: ["Lead Frio"],
+  },
+  {
+    id: 7,
+    name: "Coca-Cola",
+    designation: "Setor alimentício",
+    color: "info",
+    email: "john@coca.com",
+    projects: "125",
+    tags: ["Lead Quente"],
+  },
+  {
+    id: 8,
+    img: avatar7,
+    name: "Seara",
+    designation: "Setor alimentício",
+    color: "",
+    email: "colin@seara.com",
+    projects: "136",
+    tags: ["Lead Quente", "Proposta", "Em andamento"],
+  },
+]
+const userProfile = {
+  id: 1,
+  name: "Cynthia Price",
+  designation: "UI/UX Designer",
+  img: avatar1,
+  projectCount: 125,
+  revenue: 1245,
+  personalDetail:
+    "Hi I'm Cynthia Price,has been the industry's standard dummy text To an English person, it will seem like simplified English, as a skeptical Cambridge.",
+  phone: "(123) 123 1234",
+  email: "cynthiaskote@gmail.com",
+  location: "California, United States",
+  experiences: [
+    {
+      id: 1,
+      iconClass: "bx-server",
+      link: "#",
+      designation: "Back end Developer",
+      timeDuration: "2016 - 19",
+    },
+    {
+      id: 2,
+      iconClass: "bx-code",
+      link: "#",
+      designation: "Front end Developer",
+      timeDuration: "2013 - 16",
+    },
+    {
+      id: 3,
+      iconClass: "bx-edit",
+      link: "#",
+      designation: "UI /UX Designer",
+      timeDuration: "2011 - 13",
+    },
+  ],
+  projects: [
+    {
+      id: 1,
+      name: "Skote admin UI",
+      startDate: "2 Sep, 2019",
+      deadline: "20 Oct, 2019",
+      budget: "$506",
+    },
+    {
+      id: 2,
+      name: "Skote admin Logo",
+      startDate: "1 Sep, 2019",
+      deadline: "2 Sep, 2019",
+      budget: "$94",
+    },
+    {
+      id: 3,
+      name: "Redesign - Landing page",
+      startDate: "21 Sep, 2019",
+      deadline: "29 Sep, 2019",
+      budget: "$156",
+    },
+    {
+      id: 4,
+      name: "App Landing UI",
+      startDate: "29 Sep, 2019",
+      deadline: "04 Oct, 2019",
+      budget: "$122",
+    },
+    {
+      id: 5,
+      name: "Blog Template",
+      startDate: "05 Oct, 2019",
+      deadline: "16 Oct, 2019",
+      budget: "$164",
+    },
+    {
+      id: 6,
+      name: "Redesign - Multipurpose Landing",
+      startDate: "17 Oct, 2019",
+      deadline: "05 Nov, 2019",
+      budget: "$192",
+    },
+    {
+      id: 7,
+      name: "Logo Branding",
+      startDate: "04 Nov, 2019",
+      deadline: "05 Nov, 2019",
+      budget: "$94",
+    },
+  ],
+}
+export { users, userProfile }

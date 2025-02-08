@@ -1,0 +1,13 @@
+.cf-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  gap: 10px;
+  border-bottom: 1px solid #eff2f7;
+}
+
+.cf-label {
+  font-weight: bold;
+}
